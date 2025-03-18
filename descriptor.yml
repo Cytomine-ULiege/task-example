@@ -1,0 +1,30 @@
+name: Example
+name_short: example
+version: 0.1.0
+namespace: com.cytomine.dummy.example
+$schema: https://cytomine.com/schema-store/tasks/task.v0.json
+
+authors:
+  - first_name: Cytomine
+    last_name: ULiège
+    organization: University of Liege
+    email: uliege@cytomine.org
+    is_contact: true
+
+configuration:
+  input_folder: /inputs
+  output_folder: /outputs
+
+inputs:
+  size:
+    display_name: Size
+    type:
+      id: integer
+      gt: 0
+    description: Size of the array
+
+outputs:
+  sum:
+    display_name: Sum
+    type: number
+    description: The sum of random numbers in the array
